@@ -1,5 +1,5 @@
-let examples  = angular.module('examples', []);
+angular.module('examples', ['my-angular-components']);
 
-examples.component("hello", {
-    template: '<h1>Hello</h1>'
-})
+// examples.component("hello", {
+//     template: '<h1>Hello</h1>'
+// })

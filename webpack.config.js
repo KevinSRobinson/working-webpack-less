@@ -6,6 +6,7 @@ module.exports = {
 	entry: {
 		app: './app.js',
 		lib: './lib.js',
+		examples: './examples.js',
 	},
 	output: {
 		publicPath: '/public/assets/',

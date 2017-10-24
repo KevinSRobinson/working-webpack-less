@@ -3,6 +3,9 @@ console.log('App loaded');
 require('../css/bootstrap.css');
 require('../css/app.less');
 angular.module('my-angular-components', []);
+
+require('./Components/cssClassService.js');
+
 require('./Components/Buttons/Button/button.js');
 require('./Components/Buttons/SpinnerButton/spinnerButton.js');
 require('./Components/ComboBoxes/CategorySelect/categorySelect.js')

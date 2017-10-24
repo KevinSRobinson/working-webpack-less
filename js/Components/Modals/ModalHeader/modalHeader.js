@@ -16,7 +16,7 @@ var myModalHeader = {
 
 
     },
-    template:'<div class="modal-header" id="vm.id"><h3 class="modal-title">{{vm.title}}</h3></div>'
+    template:require('raw-loader!./modalHeaderTempalte.html')    
 };
 
 

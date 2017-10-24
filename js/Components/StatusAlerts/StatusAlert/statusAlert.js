@@ -48,7 +48,7 @@ var myStatusAlert = {
 
 
     },
-    templateUrl:'./src/client/app/Components/StatusAlerts/StatusAlert/statusAlertTemplate.html'
+    template:require('raw-loader!./statusAlertTemplate.html')      
 };
 
 

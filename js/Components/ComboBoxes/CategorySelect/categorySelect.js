@@ -98,8 +98,7 @@ var buildList = function () {
         vm.init();
 
     },
-    templateUrl: './src/client/app/Components/ComboBoxes/CategorySelect/categorySelectTemplate.html'
-
+    template:require('raw-loader!./categorySelectTemplate.html')
     
 };
 

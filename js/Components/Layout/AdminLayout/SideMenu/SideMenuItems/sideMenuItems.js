@@ -18,7 +18,7 @@ var adminSideMenuItems = {
 
         };
     },
-    template:'<li class="sidebar-list" ng-repeat="item in vm.menuItems"><a ui-sref="{{item.state}}" ng-if="vm.showItem(item)">{{item.linkText}} <span class="menu-icon fa fa-{{item.icon}}"></span></a></li>'
+    template:require('raw-loader!./sideMenuItemsTemplate.html')          
 };
 
 adminSideMenuItems.$inject = ['$rootScope'];

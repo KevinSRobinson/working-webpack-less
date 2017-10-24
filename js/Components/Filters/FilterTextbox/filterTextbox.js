@@ -15,7 +15,7 @@ var myFilterTextbox = {
 
 
     },
-    template:'<div class="input-group" style="display: flex"><input type="text" ng-model="vm.ngModel" placeholder="{{vm.placeholder}}" id="{{vm.fieldName}}" class="form-control"> <button class="btn btn-default" id="searchFilter"><i class="glyphicon glyphicon-search"></i></button></div>'
+    template:require('raw-loader!./filterTextboxTemplate.html')
 };
 
 

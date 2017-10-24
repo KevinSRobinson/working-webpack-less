@@ -15,6 +15,17 @@
 	
 	<my-button1 text="Click Here!" icon="check"></my-button1>
 
+	<admin-layout title="Admidn" theme="success"
+	side-menu-items="vm.sideMenuItems"
+	user-menu-items="vm.userMenuItems"
+	alert-menu-items="vm.alertMenuItems",
+	footer-links="vm.footerLinks"
+	user-name="{{vm.userName}}">
+
+<div ui-view>
+
+</admin-layout>
+
   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">

@@ -24,7 +24,7 @@ var myModalButtons = {
         };
 
     },
-    templateUrl:'./src/client/app/Components/Modals/ModalButtons/modalButtonsTempalte.html'
+    template:require('raw-loader!./modalButtonsTempalte.html')          
 };
 
 angular.module('my-angular-components').component('myModalButtons', myModalButtons);

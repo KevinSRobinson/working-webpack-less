@@ -77,7 +77,7 @@ var myMorelessPanel = {
 
 
     },
-    template:'<div uib-collapse="vm.isCollapsed"><div class="panel-body" ng-transclude></div></div><button type="button" class="btn btn-default" ng-click="vm.isCollapsed = !vm.isCollapsed">{{vm.getButtonText()}}</button>'
+    template:require('raw-loader!./moreLessPanel.html')      
 };
 
 

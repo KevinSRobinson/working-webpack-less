@@ -72,7 +72,7 @@ var myInputField = {
 
 
     },
-    templateUrl: './src/client/app/Components/Inputs/InputField/inputFieldTemplate.html'
+    template:require('raw-loader!./inputFieldTemplate.html')            
 };
 
 myInputField.$inject = ['cssClassService'];

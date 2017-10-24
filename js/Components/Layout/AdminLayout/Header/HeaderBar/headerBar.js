@@ -8,7 +8,7 @@ var adminHeaderBar = {
         userName: '@'
     },
     controllerAs: 'vm',
-    templateUrl:'./src/client/app/Components/Layout/AdminLayout/Header/HeaderBar/headerBarTemplate.html'
+    template:require('raw-loader!./headerBarTemplate.html')           
 };
 
 

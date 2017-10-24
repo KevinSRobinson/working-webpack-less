@@ -9,7 +9,7 @@ var myPageTitle = {
         
         
     },
-    template:'<h1 id="pageTitle"><i class="fa fa-{{vm.icon}}"><div ng-transclude></div></i></h1>'
+    template:require('raw-loader!./pageHeaderTemplate.html')    
 };
 
 angular.module('my-angular-components').component('myPageTitle', myPageTitle);

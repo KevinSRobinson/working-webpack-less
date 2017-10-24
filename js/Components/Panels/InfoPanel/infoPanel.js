@@ -28,7 +28,7 @@ var myInfoPanel = {
 
         
     },
-    template:'<div class="well"><i class="fa fa-{{vm.icon}}"></i> {{vm.infoText}}<ul class="on-page-nav"></ul></div>'
+    template:require('raw-loader!./infoPanelTemplate.html')  
 };
 
 

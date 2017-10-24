@@ -34,7 +34,7 @@ var myMoreLessButton = {
             }
         };
     },
-    template:'<button type="button" class="{{vm.cssClass}" id="{{vm.id}}" ng-click="vm.isCollapsed = !vm.isCollapsed"><i ng-class="vm.getButtonIcon()" aria-hidden="true"></i>{{vm.getButtonText() }}</button>'
+    template:require('raw-loader!./moreLessButtonTemplate.html')      
 };
 
 angular.module('my-angular-components').component('myMoreLessButton', myMoreLessButton);

@@ -41,7 +41,7 @@ var adminLayout = {
                 return "uiView";
         };
     },
-    templateUrl:'./src/client/app/Components/Layout/AdminLayout/AdminLayoutCore/adminLayoutTemplate.html'
+    template:require('raw-loader!./adminLayoutTemplate.html')       
 };
 
 adminLayout.$inject = ['$scope'];

@@ -36,7 +36,7 @@ var myDateTimeDifferenceField = {
         }
 
     },
-    templateUrl:'./src/client/app/Components/Inputs/DateTimeDifferenceField/dateTimeDifferenceFieldTemplate.html'
+    template:require('raw-loader!./dateTimeDifferenceFieldTemplate.html')        
 };
 
 

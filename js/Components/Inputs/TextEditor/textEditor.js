@@ -13,7 +13,7 @@ var myRichTextEditor = {
             firstLineNumber: 5,
         };
     },
-    template:'<div ui-ace="vm.options" ng-model="vm.ngModel"></div>'
+    template:require('raw-loader!./textEditorTemplate.html')            
 };
 
 

@@ -1,5 +1,27 @@
 angular.module('examples', ['my-angular-components']);
+require('./Examples/app.js');
+require('./Examples/auth.service.js');
+require('./Examples/examplesEntry.js');
+require('./Examples/login.controller.js');
+require('./Examples/Buttons/buttonExamples.js');
+require('./Examples/Layout/adminLayoutExample.js');
+require('./Examples/Common/common.js');
+require('./Examples/Dates/dateExamples.js');
+require('./Examples/ExampleForm/exampleForm.js');
+require('./Examples/ExampleForm/CreateButton/createButton.js');
+require('./Examples/Firebase/firebase.js');
+require('./Examples/Grid/gridExample.js');
+require('./Examples/Home/home.js');
+require('./Examples/Inputs/inputs.js');
+require('./Examples/Layout/adminLayoutExample.js');
+require('./Examples/Login/login.js');
+require('./Examples/Map/mapExample.js');
+require('./Examples/Modals/modals.js');
+require('./Examples/Other/Spinner/spinner.js');
+require('./Examples/Other/TextEditor/textEditor.js');
+require('./Examples/Panels/panels.js');
+require('./Examples/SelectLists/selectListExamples.js');
+require('./Examples/StatusAlerts/statusAlerts.js');
+require('./Examples/Tags/tags.js');
+require('./Examples/UserProfile/userProfile.js');
 
-// examples.component("hello", {
-//     template: '<h1>Hello</h1>'
-// })

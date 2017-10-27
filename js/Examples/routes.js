@@ -77,7 +77,7 @@ angular.module("examples").config(function ($locationProvider, $stateProvider, $
         template: '<firebase-examples></firebase-examples>'
     };
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 //  $stateProvider.state(homeState);
 
  
@@ -97,5 +97,5 @@ angular.module("examples").config(function ($locationProvider, $stateProvider, $
     $stateProvider.state(modalsState);
     $stateProvider.state(tagsState);
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/#');
 });

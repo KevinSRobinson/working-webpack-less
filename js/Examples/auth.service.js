@@ -1,56 +1,63 @@
-
-    // angular
-    //     .module('examples')
-    //     .service('authService', authService);
-
-    // function authService(lock, authManager, $q) {
-
-      
-
-
-    //     function login() {
-    //         lock.show();
-    //     }
-
-
-
-    //     function getProfileDeferred() {            
-    //         var userProfile = JSON.parse(localStorage.getItem('profile')) || null;
-    //         var deferredProfile = $q.defer();
-    //         if (userProfile) {
-    //             deferredProfile.resolve(userProfile);
-    //         }
-    //         return deferredProfile.promise;
-    //     }
-
-
-    //     // Set up the logic for when a user authenticates
-    //     // This method is called from app.run.js
-    //     function registerAuthenticationListener() {
-    //         lock.on('authenticated', function (authResult) {
-    //             console.log('----------------------');
-    //             console.log('-----------authenticated-----------');
-    //             localStorage.setItem('id_token', authResult.idToken);
-    //             authManager.authenticate();
-    //         });
-
-    //         lock.on('authenticated', function (authResult) {
-
-    //             lock.getProfile(authResult.idToken, function (error, profile) {
-    //                 if (error) {
-    //                     return console.log(error);
-    //                 }
-
-    //                 localStorage.setItem('profile', JSON.stringify(profile));
-    //                 deferredProfile.resolve(profile);
-    //             });
-
-    //         });
-    //     }
-
-    //     return {
-    //         login: login,
-    //         registerAuthenticationListener: registerAuthenticationListener,
-    //         getProfileDeferred: getProfileDeferred
-    //     }
-    // }
+(function () {
+    
+      'use strict';
+    
+      angular
+        .module('examples')
+        .service('authService', authService);
+    
+      authService.$inject = ['$state', 'angularAuth0', '$timeout'];
+    
+      function authService($state, angularAuth0, $timeout) {
+    
+        function login() {
+          angularAuth0.authorize();
+        }
+        
+        function handleAuthentication() {
+          angularAuth0.parseHash(function(err, authResult) {
+            if (authResult && authResult.accessToken && authResult.idToken) {
+              setSession(authResult);
+              $state.go('home');
+            } else if (err) {
+              $timeout(function() {
+                $state.go('home');
+              });
+              console.log(err);
+              alert('Error: ' + err.error + '. Check the console for further details.');
+            }
+          });
+        }
+    
+        function setSession(authResult) {
+          // Set the time that the access token will expire at
+          let expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
+          localStorage.setItem('access_token', authResult.accessToken);
+          localStorage.setItem('id_token', authResult.idToken);
+          localStorage.setItem('expires_at', expiresAt);
+        }
+        
+        function logout() {
+          // Remove tokens and expiry time from localStorage
+          localStorage.removeItem('access_token');
+          localStorage.removeItem('id_token');
+          localStorage.removeItem('expires_at');
+          $state.go('home');
+        }
+        
+        function isAuthenticated() {
+          // Check whether the current time is past the 
+          // access token's expiry time
+          let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
+          return new Date().getTime() < expiresAt;
+        }
+    
+        return {
+          login: login,
+          handleAuthentication: handleAuthentication,
+          logout: logout,
+          isAuthenticated: isAuthenticated
+        }
+      }
+    })();
+    

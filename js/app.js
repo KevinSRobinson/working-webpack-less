@@ -2,7 +2,14 @@ console.log('App loaded');
 
 require('../css/bootstrap.css');
 require('../css/app.less');
-angular.module('my-angular-components', []);
+angular.module('my-angular-components', [ 'ngAnimate',
+'ngSanitize',
+
+//angular ui
+'ui.ace',
+'ui.bootstrap',
+'ui.select',
+'ui.grid']);
 
 require('./Components/cssClassService.js');
 

@@ -24,7 +24,7 @@
        
         $stateProvider
           .state('home', {
-            url: '/',
+            url: '/#',
             controllerAs: "vm",
             template: '<home></home>'
           })
@@ -45,13 +45,13 @@
           scope: 'openid'
         });
     
-        $urlRouterProvider.otherwise('/');
+       // $urlRouterProvider.otherwise('/#');
     
-        $locationProvider.hashPrefix('');
+       // $locationProvider.hashPrefix('#');
     
         /// Comment out the line below to run the app
         // without HTML5 mode (will use hashes in routes)
-        $locationProvider.html5Mode(true);
+       // $locationProvider.html5Mode(true);
       }
     
     })();

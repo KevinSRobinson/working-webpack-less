@@ -8,6 +8,6 @@ require("angular-ui-grid");
 require("ui-select");
 require("ng-fab-form");
 require("angular-ui-router");
-
+var uiBootstrap = require('angular-ui-bootstrap')
 
 

@@ -1,9 +1,15 @@
 <style>
 .uiViewColapsed{
-    margin-left:100px;
+    margin-right:20px;
+    margin-left:23px;
+    padding-left:200px;
+    padding-right:10px;
 }
 .uiView{
-    margin-left:20px;
+    margin-right:20px;
+    margin-left:2px;
+    padding-left:10px;
+    padding-right:15px;
 }
 </style>
 <div id="page-wrapper" ng-cloak ng-class="vm.getState()">
@@ -13,9 +19,9 @@
     </div>
     <div id="content-wrapper">
         <div class="page-content">
-             <!--Header Bar 
+           
             <admin-header-bar title="Timebanking" alert-menu-items="vm.alertMenuItems" user-menu-items="vm.userMenuItems" user-name="{{vm.userName}}">
-            </admin-header-bar>-->
+            </admin-header-bar> 
 
             <div ng-class="vm.getViewCssClass()">
                 <ng-transclude></ng-transclude>

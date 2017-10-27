@@ -1,5 +1,5 @@
 angular.module('my-angular-components').directive('markdown', function () {
-    var converter = new Showdown.converter();
+    var converter = new showdown.Converter();
 
 
     var link = function (scope, element, attrs) {

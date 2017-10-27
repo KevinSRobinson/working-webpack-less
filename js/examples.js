@@ -22,7 +22,11 @@ require('./Examples/Login/login.js');
 require('./Examples/Map/mapExample.js');
 require('./Examples/Modals/modals.js');
 require('./Examples/Other/Spinner/spinner.js');
+require('./Examples/Other/TextEditor/markdown.directive.js');
 require('./Examples/Other/TextEditor/textEditor.js');
+require('./Examples/TextEditor/textEditorExample.js');
+
+
 require('./Examples/Panels/panels.js');
 require('./Examples/SelectLists/selectListExamples.js');
 require('./Examples/StatusAlerts/statusAlerts.js');

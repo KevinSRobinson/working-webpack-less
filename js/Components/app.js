@@ -8,8 +8,9 @@ var app = angular.module('my-angular-components', [
     'ui.bootstrap',
     'ui.select',
     'ui.grid',  
+    'ngFabForm'
 ]);
-app.$inject = ['ngAnimate', 'ngSanitize', 'ui.ace', 'ui.bootstrap', 'ui.select', 'ui.grid'];
+app.$inject = ['ngAnimate', 'ngSanitize', 'ui.ace', 'ui.bootstrap', 'ui.select', 'ui.grid' ,'ngFabForm'];
 
 (function () {
 

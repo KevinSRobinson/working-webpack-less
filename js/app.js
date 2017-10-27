@@ -9,6 +9,7 @@ angular.module('my-angular-components', [ 'ngAnimate',
 'ui.ace',
 'ui.bootstrap',
 'ui.select',
+'ngFabForm',
 'ui.grid']);
 
 require('./Components/cssClassService.js');

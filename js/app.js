@@ -23,7 +23,6 @@ require('./Components/Headers/PageHeader/pageHeader.js');
 require('./Components/Inputs/DatesField/DateField/dateField.js')
 require('./Components/Inputs/DateTimeDifferenceField/dateTimeDifferenceField.js');
 
-require('./Components/Inputs/DateTimeDifferenceField/dateTimeDifferenceField.js');
 require('./Components/Inputs/InputField/inputField.js');
 require('./Components/Inputs/SelectField/selectField.js');
 require('./Components/Inputs/TextEditor/textEditor.js');

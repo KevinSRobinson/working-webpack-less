@@ -5,7 +5,7 @@ var dateExamples = {
 
     
     },
-    templateUrl: "raw-loader!./dateExamplesTemplate.html"
+    template: require("raw-loader!./dateExamplesTemplate.html")
 };
 
 angular.module('examples').component('dateExamples', dateExamples);

@@ -5,7 +5,7 @@ var statusAlerts = {
 
  
     },
-    templatetemplate: require("raw-loader!./statusAlertsTemplate.html")
+    template: require("raw-loader!./statusAlertsTemplate.html")
 };
 
 angular.module('examples').component('statusAlertExamples', statusAlerts);

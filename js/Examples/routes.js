@@ -1,11 +1,6 @@
 angular.module("examples").config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 
-    var homeState = {
-        name: 'home',
-        url: '/',
-        controllerAs: "vm",
-        template: '<home></home>'
-    };
+   
     var buttonsState = {
         name: 'buttons',
         url: '/buttons',

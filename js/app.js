@@ -2,7 +2,7 @@ console.log('App loaded');
 
 require('../css/bootstrap.css');
 require('../css/app.less');
-angular.module('my-angular-components', ['auth0.auth0']);
+angular.module('my-angular-components', []);
 
 require('./Components/cssClassService.js');
 

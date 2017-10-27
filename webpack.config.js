@@ -1,5 +1,5 @@
 var path = require('path');
-
+var webpack = require('webpack');
 
 module.exports = {
 	context: path.resolve('js'),
@@ -30,7 +30,6 @@ module.exports = {
 			}
 		]
 	},
-
 	resolve: {
 		extensions: ['.', '.js', '.es6']
 	}

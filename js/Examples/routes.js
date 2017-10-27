@@ -1,6 +1,12 @@
 angular.module("examples").config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 
-   
+
+      var homeState = {
+        name: 'home',
+        url: '/home',
+        controllerAs: "vm",
+        template: '<home></home>'
+    };
     var buttonsState = {
         name: 'buttons',
         url: '/buttons',
@@ -78,7 +84,7 @@ angular.module("examples").config(function ($locationProvider, $stateProvider, $
     };
 
     $locationProvider.html5Mode(false);
-//  $stateProvider.state(homeState);
+  $stateProvider.state(homeState);
 
  
      $stateProvider.state(buttonsState);

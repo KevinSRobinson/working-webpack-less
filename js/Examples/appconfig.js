@@ -23,11 +23,7 @@
       ) {
        
         $stateProvider
-          .state('home', {
-            url: '/',
-            controllerAs: "vm",
-            template: '<home></home>'
-          })
+          
           .state('callback', {
             url: '/callback',
             controller: 'CallbackController',

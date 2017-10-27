@@ -1,12 +1,11 @@
 var app = angular.module('examples', ['my-angular-components', 'ngFabForm',
 
-    'ui.router',
-    'auth0.lock', 'angular-jwt', 'firebase',
+    'ui.router'
 ]);
 
 app.run(function ($rootScope, authService, lock) {
 
-    run.$inject = ['$rootScope', 'authService', 'lock'];
+    run.$inject = ['$rootScope', 'authService'];
 
     function run($rootScope, authService, lock) {
         // Put the authService on $rootScope so its methods

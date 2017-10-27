@@ -1,7 +1,8 @@
 
  window.auth0 =  require('../node_modules/auth0-js/build/auth0.js');
  require('../node_modules/angular-auth0/dist/angular-auth0.js');
-angular.module('examples', ['my-angular-components', 'auth0.auth0']);
+angular.module('examples', ['my-angular-components', 'auth0.auth0', 'ui.router']);
+require('./Examples/routes.js');
 require('./Examples/auth.service.js');
 require('./Examples/appconfig.js');
 require('./Examples/examplesEntry.js');

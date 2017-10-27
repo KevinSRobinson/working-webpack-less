@@ -78,7 +78,7 @@ angular.module("examples").config(function ($locationProvider, $stateProvider, $
     };
 
     $locationProvider.html5Mode(true);
- $stateProvider.state(homeState);
+//  $stateProvider.state(homeState);
 
  
      $stateProvider.state(buttonsState);

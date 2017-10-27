@@ -1,4 +1,4 @@
-var myButton1 = {
+var myButton = {
     bindings: {
         id: '@',
         text: '@',
@@ -114,4 +114,4 @@ var myButton1 = {
     template : require('raw-loader!./buttonTemplate.html')
 };
 
-angular.module('my-angular-components').component('myButton', myButton1);
+angular.module('my-angular-components').component('myButton', myButton);

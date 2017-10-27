@@ -1,14 +1,12 @@
-module.exports = function (app) {
+let component = {
+    controllerAs: 'vm',
+    controller: function () {
+        var vm = this;
 
-    app.component('buttonExamples', component);
-
-    let component = {
-        controllerAs: 'vm',
-        controller: function () {
-            var vm = this;
-
-
-        },
-        template: require("raw-loader!./buttonExamplesTemplate.html")
-    }
+        vm.click = function(){
+            alert('You click me');
+        };
+    },
+    template: require("raw-loader!./buttonExamplesTemplate.html")
 }
+angular.module("examples").component('buttonExamples', component);

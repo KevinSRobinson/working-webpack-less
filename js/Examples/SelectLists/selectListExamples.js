@@ -4,17 +4,20 @@ var selectListExamples = {
         var vm = this;
 
         vm.items = [
-        {
-            "firstName": "Cox",
+        {   
+            "id": 1,
+            "name": "Cox",
             "lastName": "Carney"
         },
         {
-            "firstName": "Kevin",
-            "lastName": "Robinons"
+            "id": 2,
+            "name": "Kevin",
+            "lastName": "Robeinons"
         },
         {
-            "firstName": "Sean",
-            "lastName": "Robinons"
+            "id": 3,
+            "name": "Sean",
+            "lastName": "eRoebinons"
         }];
     },
     template: require("raw-loader!./selectListExamplesTemplate.html")

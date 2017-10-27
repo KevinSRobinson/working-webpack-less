@@ -11,10 +11,13 @@ var myInfoPanel = {
         vm.$onInit = function () {
             //deafults
             vm.ngModel = "Set this Text using ngModel";
-            vm.icon = 'fa fa-info fa-2x';
-            vm.color = '#64518A';
+            vm.icon = 'fa fa-info fa-2x ';
+            vm.color = '#FFFFF';
         };
 
+        vm.getIcon = function () {
+            return "fa fa-info "
+        }
 
         //TODO: Improve this
         vm.getStyle = function () {

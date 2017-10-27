@@ -5,7 +5,7 @@ var modals = {
 
         vm.open = function () {
             return $uibModal.open({
-                templateUrl: 'sampleModalTemplate.html',
+                template: require("raw-loader!./sampleModalTemplate.html"),
                 controllerAs: 'vm',
                 controller:function($uibModalInstance){
                     var vm = this;

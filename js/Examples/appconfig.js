@@ -24,7 +24,7 @@
        
         $stateProvider
           .state('home', {
-            url: '/#',
+            url: '/',
             controllerAs: "vm",
             template: '<home></home>'
           })

@@ -11,7 +11,6 @@ require("angular-ui-router");
 window.showdown = require('showdown'),
 require("./components/ace.js");
 require("../node_modules/angular-ui-ace/src/ui-ace.js");
-
 var uiBootstrap = require('angular-ui-bootstrap')
-
+require("font-awesome-webpack");
 

@@ -1,13 +1,17 @@
 var myPageTitle = {
     transclude: "true",
     bindings: {
-        icon: "@"
+        icon: "@",
+        text: "@"
     },
     controllerAs: 'vm',
     controller: function () {
         var vm = this;
         
-        
+        vm.getIcon = function() {
+            console.log(vm.icon)
+            return " " + vm.icon;
+        };
     },
     template:require('raw-loader!./pageHeaderTemplate.html')    
 };

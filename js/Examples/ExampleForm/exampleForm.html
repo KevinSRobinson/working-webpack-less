@@ -1,12 +1,9 @@
 <div class="col-md-6 center-block">
-    <h1>Example Form1 </h1>
-{{ vm.customerForm.$valid }}
-      <my-spinner-button button-text="Submit Form" 
-            saving="vm.saving" is-disabled="!vm.customerForm.$valid" ng-click="vm.submit()">
-        </my-spinner-button>
-        <i class="fa fa-bars fa-2x">
-            
-                    </i>
+    
+
+    <my-page-title icon="users" text="Example Form"></my-page-title>
+    
+
     <form role="form" name="vm.customerForm" ng-submit="submit()" ng-fab-form-options="customFormOptions">
         
         
@@ -32,7 +29,9 @@
         <!--<my-input-field field-label="Start Date" input-type="date" ng-model="vm.sampleDate" placeholder="Enter a description about yourself">
         </my-input-field>-->
 
-      
+        <my-spinner-button button-text="Submit Form" 
+        saving="vm.saving" is-disabled="!vm.customerForm.$valid" ng-click="vm.submit()">
+    </my-spinner-button>
 
       
     </form>

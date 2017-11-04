@@ -4,7 +4,7 @@ var exampleForm = {
         var vm = this;
         vm.simulateError = false;
         vm.customerForm = {};
-        vm.age = 99;
+        vm.age = null;
         
         vm.status = {
             message: "",

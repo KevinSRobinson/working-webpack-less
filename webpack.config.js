@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	context: path.resolve('js'),
@@ -16,7 +17,12 @@ module.exports = {
 	devServer: {
 		contentBase: 'public'
 	},
-
+	plugins: [
+		new HtmlWebpackPlugin({
+		  title: 'Hot Module Replacement'
+		}),
+       new webpack.HotModuleReplacementPlugin()
+	  ],
 	module: {
 		loaders: [
 			{
@@ -32,7 +38,7 @@ module.exports = {
 			{ test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
 			{ test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: "file-loader" }		
 	
-	  		]
+	  		],
 	},
 	resolve: {
 		extensions: ['.', '.js', '.es6']

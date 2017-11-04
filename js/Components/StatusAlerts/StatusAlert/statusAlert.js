@@ -18,10 +18,7 @@ var myStatusAlert = {
 
 
         vm.getMessage = function () {
-            if (vm.isError === 'true')
-                return vm.errorMessage;
-            else
-                return vm.successMessage;
+            return vm.message;           
         };
 
         vm.getClass = function () {

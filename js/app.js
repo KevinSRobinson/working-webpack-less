@@ -1,7 +1,14 @@
-console.log('App loaded');
-
 require('../css/bootstrap.css');
 require('../css/app.less');
+require('../css/core.less');
+require('../css/fonts.less');
+require('../css/forms.less');
+require('../css/alerts.less');
+require('../css/menu.less');
+require('../css/sidebar.less');
+require('../css/aceeditor.less');
+
+
 angular.module('my-angular-components', [ 'ngAnimate',
 'ngSanitize',
 

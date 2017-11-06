@@ -9,6 +9,8 @@
 
 </style>
 <div class="form-group">
+{{vm.cssClassService.getlabelClass(vm.horizontal, vm.labelWidth)}}
+
     <!--field label-->
     <label ng-class="vm.cssClassService.getlabelClass(vm.horizontal, vm.labelWidth)" for="vm.fieldName">{{vm.fieldLabel}}</label>
     <div ng-class="vm.cssClassService.getInputClass(vm.horizontal, vm.inputWidth)">

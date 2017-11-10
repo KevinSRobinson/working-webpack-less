@@ -11,7 +11,7 @@ require('../css/aceeditor.less');
 
 angular.module('my-angular-components', [ 'ngAnimate',
 'ngSanitize',
-
+'angularUtils.directives.dirPagination',
 //angular ui
 'ui.ace',
 'ui.bootstrap',

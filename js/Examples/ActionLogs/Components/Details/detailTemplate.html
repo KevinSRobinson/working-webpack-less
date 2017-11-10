@@ -1,0 +1,7 @@
+<h1>{{vm.title}}</h1>
+
+
+<input ng-model="vm.filter"></input>
+<div ng-repeat="name in vm.names |filter:vm.filter">
+   <b>Name</b> {{name.firstname}}  {{name.lastname}} 
+</div>

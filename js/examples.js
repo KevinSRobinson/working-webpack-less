@@ -8,3 +8,13 @@ require('./Examples/appconfig.js');
 require('./Examples/Layout/adminLayoutExample.js');
 require('./Examples/ExampleForm/exampleForm.js');
 
+''
+
+
+require('./Examples/ActionLogs/Modals/actionLogsModalService.js');
+require('./Examples/ActionLogs/Components/Details/details.js');
+require('./Examples/ActionLogs/Components/List/actionLogsList.js');
+require('./Examples/ActionLogs/Modals/ViewActionlog/viewActionLogControlller.js');
+require('./Examples/ActionLogs/Services/actionLogsDataServices.js');
+require('./Examples/ActionLogs/routes.js');
+

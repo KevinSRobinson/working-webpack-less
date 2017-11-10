@@ -8,7 +8,11 @@ require('./Examples/appconfig.js');
 require('./Examples/Layout/adminLayoutExample.js');
 require('./Examples/ExampleForm/exampleForm.js');
 
-
+require('./Examples/lookupLists/Modals/lookupListsModalService.js');
+require('./Examples/lookupLists/Components/Details/details.js');
+require('./Examples/lookupLists/Components/List/lookupLists.js');
+require('./Examples/lookupLists/Services/lookupListsDataServices.js');
+require('./Examples/lookupLists/routes.js');
 
 
 require('./Examples/ActionLogs/Modals/actionLogsModalService.js');

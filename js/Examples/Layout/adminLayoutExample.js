@@ -21,6 +21,12 @@ var adminLayoutExample = {
             linkText: "Action Logs",
             icon: "users",
             requiresLogin: false
+        },
+        {
+            state: "lookupLists",
+            linkText: "Lookup Lists",
+            icon: "users",
+            requiresLogin: false
         }
         ];
 

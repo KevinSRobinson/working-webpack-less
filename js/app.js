@@ -8,6 +8,11 @@ require('../css/menu.less');
 require('../css/sidebar.less');
 require('../css/aceeditor.less');
 
+require('../css/fonts/glyphicons-halflings-regular.eot');
+require('../css/fonts/glyphicons-halflings-regular.svg');
+require('../css/fonts/glyphicons-halflings-regular.ttf');
+require('../css/fonts/glyphicons-halflings-regular.woff');
+require('../css/fonts/glyphicons-halflings-regular.woff2');
 
 angular.module('my-angular-components', [ 'ngAnimate',
 'ngSanitize',

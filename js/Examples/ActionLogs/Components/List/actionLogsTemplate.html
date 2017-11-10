@@ -1,4 +1,4 @@
-<div class="container theme-showcase">
+
     <style>
         .fpmcolor {
             background-color: #06749C !important;
@@ -11,8 +11,12 @@
             height: 100px
         }
     </style>
+
+
+        <!-- Title -->
+        <my-page-title icon="users" text="Action Logs"></my-page-title>
+
         <div class="row ">
-            <div class="well">
                 <div class="col-md-3">
                     <my-date-field field-label="Start Date" ng-model="vm.filter.startDate">
                     </my-date-field>
@@ -24,8 +28,6 @@
                 <div class="col-md-1">
                     <div class="btn btn-success" ng-click="vm.loadLogs()">Search </div>
                 </div>
-            </div>
-
         </div>
  
     <div class="row">

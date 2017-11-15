@@ -9,7 +9,7 @@
 
 </style>
 <div class="form-group">
-{{vm.cssClassService.getlabelClass(vm.horizontal, vm.labelWidth)}}
+
 
     <!--field label-->
     <label ng-class="vm.cssClassService.getlabelClass(vm.horizontal, vm.labelWidth)" for="vm.fieldName">{{vm.fieldLabel}}</label>
@@ -22,7 +22,7 @@
                     <span ng-bind="item.name"></span>
                 </ui-select-choices>
             </ui-select>
-            <select ng-if="vm.inputType==='combobox'" size="vm.size" multiple="vm.multiSelect" ng-model='vm.ngModel' class='form-control'
+            <select ng-if="vm.inputType==='combobox'" size="vm.size" ng-model='vm.ngModel' class='form-control'
                 id='{{vm.fieldName}}'>
                 <option ng-repeat='option in vm.items' ng-value='{{option.id}}'>{{option.name}}</option>
             </select>

@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Modify Lookup Value {{vm.lookupList.id}}</h3>
+</div>
+<div class="modal-body">
+
+     {{vm.lookupList}}
+
+         <!-- Lookup Value-->
+        <my-select-field input-type="combobox" 
+                          field-label="Lookup Name" ng-model="vm.lookupList.nameId" 
+                          items="vm.lookupListNames" required="vm.required" selected="vm.selected"> 
+        </my-select-field>
+
+        <!-- Lookup Value -->
+        <my-input-field input-type="textbox" field-label="Lookup Name" ng-model="vm.lookupList.value" required="vm.required">     
+        </my-input-field>
+
+
+
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.save()">Save</button>
+    <button class="btn btn-primary" type="button" ng-click="vm.close()">Close</button>
+</div>

@@ -13,7 +13,7 @@ require('./Examples/lookupLists/Components/Details/details.js');
 require('./Examples/lookupLists/Components/List/lookupLists.js');
 require('./Examples/lookupLists/Services/lookupListsDataServices.js');
 require('./Examples/lookupLists/routes.js');
-
+require('./Examples/lookupLists/Modals/Modify/modifylookupListControlller.js');
 
 require('./Examples/ActionLogs/Modals/actionLogsModalService.js');
 require('./Examples/ActionLogs/Components/Details/details.js');
@@ -22,3 +22,4 @@ require('./Examples/ActionLogs/Modals/ViewActionlog/viewActionLogControlller.js'
 require('./Examples/ActionLogs/Services/actionLogsDataServices.js');
 require('./Examples/ActionLogs/routes.js');
 
+require('./Examples/LookupListNames/Services/lookupListNamesDataServices.js');

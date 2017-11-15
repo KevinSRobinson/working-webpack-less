@@ -1,6 +1,6 @@
-var lookupListsDataService = function ($http) {
+var lookupListNamesDataService = function ($http) {
 
-    var apiBase = "http://localhost:17113/api/LookupLists";
+    var apiBase = "http://localhost:17113/api/LookupListNames";
 
     var getAll = function () {      
         return $http.get(apiBase);
@@ -11,11 +11,11 @@ var lookupListsDataService = function ($http) {
     };
 
     var update = function (lookupList) {
-        return $http.put(apiBase + "/" + lookupList.id, lookupList);
+        return $http.put(apiBase + "/" + id);
     };
 
     var create = function (lookupList) {
-        return $http.post(apiBase, lookupList);
+        return $http.post(apiBase);
     };
 
     return {
@@ -26,4 +26,4 @@ var lookupListsDataService = function ($http) {
     }
 };
 
-angular.module("examples").service("lookupListsDataService", lookupListsDataService);
+angular.module("examples").service("lookupListNamesDataService", lookupListNamesDataService);

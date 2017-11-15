@@ -34,12 +34,12 @@
             </tr>
 
             <tr dir-paginate="log in vm.lookupLists| filter: vm.filter.keywordFilter | itemsPerPage: 20" current-page="vm.filter.currentPage">
-                <td>{{log.id}}</td>
-                <td>{{log.name}}</td>
-                <td>{{log.value}}</td>
+                <td>{{log}}</td>
+                <td>{{log.lookupName}}</td>
+                <td>{{log.lookupValue}}</td>
                 <td>
-                    <div class="btn btn-info" ng-click="vm.modify(log.id)">Modify</div>
-                    <div class="btn btn-danger" ng-click="vm.view(log.id)">View</div>
+                    <div class="btn btn-info" ng-click="vm.modify(log.Id)">Modify</div>
+                    <div class="btn btn-danger" ng-click="vm.view(log.Id)">View</div>
                 </td>
             </tr>
 

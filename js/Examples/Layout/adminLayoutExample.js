@@ -10,11 +10,6 @@ var adminLayoutExample = {
             linkText: "Home",
             icon: "check",
             requiresLogin: false
-        },{
-            state: "forms",
-            linkText: "Example Form",
-            icon: "users",
-            requiresLogin: false
         },
         {
             state: "logEvents",
@@ -25,6 +20,12 @@ var adminLayoutExample = {
         {
             state: "lookupLists",
             linkText: "Lookup Lists",
+            icon: "users",
+            requiresLogin: false
+        },
+        {
+            state: "lookupListnames",
+            linkText: "Lookup List Names",
             icon: "users",
             requiresLogin: false
         }

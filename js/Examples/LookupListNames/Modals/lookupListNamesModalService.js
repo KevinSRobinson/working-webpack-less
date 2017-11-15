@@ -1,11 +1,11 @@
-var lookupListsModalService = function ($uibModal) {
+var lookupListNamesModalService = function ($uibModal) {
 
-    let modifyTemplate = require('raw-loader!./Modify/modifyLookupListModal.Html');
+    let modifyTemplate = require('raw-loader!./Modify/modifyLookupListNameModal.Html');
 
     var modify = function (id) {
         return $uibModal.open({
             template: modifyTemplate,
-            controller: "modifyLookupListController",
+            controller: "modifylookupListNameController",
             controllerAs: 'vm',
             resolve: {
                 id: function () {
@@ -18,7 +18,7 @@ var lookupListsModalService = function ($uibModal) {
     var create = function (id) {
         return $uibModal.open({
             template: modifyTemplate,
-            controller: "modifyLookupListController",
+            controller: "modifylookupListNameController",
             controllerAs: 'vm',
             resolve: {
                 id: function () {
@@ -32,7 +32,7 @@ var lookupListsModalService = function ($uibModal) {
     var view = function (id) {
         return $uibModal.open({
             template: require('raw-loader!./ViewActionlog/viewActionLogModal.Html'),
-            controller: "viewlookupListController",
+            controller: "viewlookupListNameController",
             controllerAs: 'vm',
             resolve: {
                 id: function () {
@@ -52,4 +52,4 @@ var lookupListsModalService = function ($uibModal) {
     };
 }
 
-angular.module('examples').factory('lookupListsModalService', lookupListsModalService);
+angular.module('examples').factory('lookupListNamesModalService', lookupListNamesModalService);

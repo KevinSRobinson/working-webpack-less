@@ -12,10 +12,7 @@ var modifyLookupListController = function ($uibModalInstance, lookupListsModalSe
       
         vm.loadLookupListNames();
     
-        if(vm.id !== 0)
-        {
-            vm.readById(vm.id);
-        }
+      
        
         vm.customFormOptions = angular.copy(ngFabForm.config);
     };
@@ -23,17 +20,26 @@ var modifyLookupListController = function ($uibModalInstance, lookupListsModalSe
     vm.readById = function(id){
         var lookupListPromise = lookupListsDataService.readById(id);
         lookupListPromise.then(function (response) {
-            console.log(response);
+            
             vm.lookupList = response.data;
         });
     }
 
+    vm.loadForm = function(id){
+        if(vm.id !== 0)
+        {
+            vm.readById(vm.id);
+        }
+    }
 
     vm.loadLookupListNames = function(){
         var lookupListNamesPromise = lookupListNamesDataService.readAll();
         lookupListNamesPromise.then(function (response) {
-            console.log(response);
+            
             vm.lookupListNames = response.data;
+
+
+            vm.loadForm();
         });
     }
 

@@ -23,3 +23,10 @@ require('./Examples/ActionLogs/Services/actionLogsDataServices.js');
 require('./Examples/ActionLogs/routes.js');
 
 require('./Examples/LookupListNames/Services/lookupListNamesDataServices.js');
+require('./Examples/lookupListNames/routes.js');
+require('./Examples/LookupListNames/Components/Details/details.js');
+require('./Examples/LookupListNames/Components/List/lookupLists.js');
+require('./Examples/LookupListNames/Modals/Modify/modifylookupListControlller.js');
+require('./Examples/LookupListNames/Modals/ViewActionlog/lookupListsLogControlller.js');
+require('./Examples/LookupListNames/Modals/lookupListNamesModalService.js');
+

@@ -2,9 +2,9 @@ angular.module("examples").config(function ($locationProvider, $stateProvider, $
     
    
         var logEventsState = {
-            name: 'lookupLists',
-            url: '/lookupLists',
-            template: '<lookup-lists></lookup-lists>'
+            name: 'lookupListnames',
+            url: '/lookupListnames',
+            template: '<lookup-list-names></lookup-list-names>'
         };
         
         $stateProvider.state(logEventsState)

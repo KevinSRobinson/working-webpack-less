@@ -11,11 +11,11 @@ var lookupListNamesDataService = function ($http) {
     };
 
     var update = function (lookupList) {
-        return $http.put(apiBase + "/" + id);
+        return $http.put(apiBase + "/" + lookupList.id, lookupList);
     };
 
     var create = function (lookupList) {
-        return $http.post(apiBase);
+        return $http.post(apiBase, lookupList);
     };
 
     return {

@@ -50,13 +50,13 @@
                 </tr>
 
                 <tr dir-paginate="log in vm.actionLogs| filter: vm.filter.keywordFilter | itemsPerPage: 20" current-page="vm.filter.currentPage">
-                    <td>{{log.Id}}</td>
-                    <td>{{log.LogLevel}}</td>
-                    <td>{{log.Message | limitTo: 100}}</td>
-                    <td>{{log.Username.replace('FPMCCANN', '') }}</td>
-                    <td>{{log.DateStamp | date:'medium'}}</td>
+                    <td>{{log.id}}</td>
+                    <td>{{log.logLevel}}</td>
+                    <td>{{log.message | limitTo: 100}}</td>
+                    <td>{{log.username.replace('FPMCCANN', '') }}</td>
+                    <td>{{log.dateStamp | date:'medium'}}</td>
                     <td>
-                        <div class="btn btn-danger" ng-click="vm.view(log.Id)">View</div>
+                        <div class="btn btn-danger" ng-click="vm.view(log.id)">View</div>
                     </td>
                 </tr>
 

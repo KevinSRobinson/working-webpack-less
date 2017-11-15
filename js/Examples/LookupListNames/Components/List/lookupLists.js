@@ -1,10 +1,10 @@
-var lookupListsList = {
-    template: require('raw-loader!./lookupListsTemplate.html'),
+var lookupListNamesList = {
+    template: require('raw-loader!./lookupListNamesTemplate.html'),
     controllerAs: "vm",
-    controller: function (lookupListsDataService, lookupListsModalService){
+    controller: function (lookupListNamesDataService, lookupListNamesModalService){
         var vm = this;
 
-        vm.lookupLists = [];
+        vm.lookupListNames = [];
         vm.startDateOpened = false;
         vm.loading = false;
         vm.resultsCount  = 0;
@@ -44,14 +44,14 @@ var lookupListsList = {
 
         vm.loadLogs = function(){
         
-            lookupListsPromise = lookupListsDataService.readAll(vm.filter);
+            lookupListNamesPromise = lookupListNamesDataService.readAll(vm.filter);
             console.log('start');
 
-            lookupListsPromise.then(function(result){
+            lookupListNamesPromise.then(function(result){
                 vm.loading = false
                 console.log('result');
                 console.log(result.data);
-                vm.lookupLists = result.data;
+                vm.lookupListNames = result.data;
 
 
                 vm.resultsCount = result.data.Count;
@@ -68,17 +68,17 @@ var lookupListsList = {
 
         vm.view = function (id) {
                 console.log(id);
-            var result = lookupListsModalService.View(id);
+            var result = lookupListNamesModalService.View(id);
             
         }
         vm.create = function (id) {
             console.log(id);
-        var result = lookupListsModalService.create();
+        var result = lookupListNamesModalService.create();
         
     }
         vm.modify = function (id) {
             console.log(id);
-        var result = lookupListsModalService.modify(id);
+        var result = lookupListNamesModalService.modify(id);
         
     }
         
@@ -86,4 +86,4 @@ var lookupListsList = {
     }
 }
 
-angular.module("examples").component("lookupLists", lookupListsList);
+angular.module("examples").component("lookupListNames", lookupListNamesList);

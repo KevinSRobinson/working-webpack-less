@@ -38,7 +38,7 @@ var lookupListsList = {
             vm.filter.endDate = new Date()
             
             
-            vm.filter.startDate.setMonth( vm.filter.startDate.getMonth()-2);            
+           // vm.filter.startDate.setMonth( vm.filter.startDate.getMonth()-2);            
             vm.loadLogs()
         }
 

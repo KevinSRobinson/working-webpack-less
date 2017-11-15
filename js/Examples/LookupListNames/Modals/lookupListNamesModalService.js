@@ -27,21 +27,7 @@ var lookupListNamesModalService = function ($uibModal) {
             }
         });
     };
-
-
-    var view = function (id) {
-        return $uibModal.open({
-            template: require('raw-loader!./ViewActionlog/viewActionLogModal.Html'),
-            controller: "viewlookupListNameController",
-            controllerAs: 'vm',
-            resolve: {
-                id: function () {
-                    return id;
-                }
-            }
-        });
-    };
-
+   
 
 
 

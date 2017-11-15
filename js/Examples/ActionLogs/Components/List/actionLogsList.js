@@ -8,6 +8,7 @@ var actionlogsList = {
         vm.startDateOpened = false;
         vm.loading = false;
         vm.resultsCount  = 0;
+    
 
         vm.pageSizes = [{
             id: 1,
@@ -16,12 +17,13 @@ var actionlogsList = {
             id: 2,
             name: "Cat 2"
         }];
-
+        
      
         vm.filter = {
             Username: 'kevin',
             pageSize: 20,
-            currentPage: 1
+            currentPage: 1,
+            database : 'Dev'
         };
 
         vm.pageChangeHandler = function(newpageNumber){
